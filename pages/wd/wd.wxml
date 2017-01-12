@@ -1,0 +1,19 @@
+<view class="page-head">
+    <text class="page-title">{{title}}</text>
+</view>
+<form class="page-form" bindsubmit="formSubmit" bindreset="formReset">
+    <view class="help-text">请输入您的问题：</view>
+    <view class="group">
+        <input class="question" type="text" bindfocus="inputFocus" name="question" auto-focus="true" placeholder="请简洁描述您的问题" value="{{entry}}"/>
+        <button class="cancel" form-type="reset">×</button>
+        <button class="search" type="primary" form-type="submit">问</button>
+    </view>
+</form>
+<view class="page-result">
+    <view wx:for="{{user}}" wx:for-item="qa" class="row">
+        <text class="user-question">{{qa.question}}</text>
+        <view class="sys-anwser">{{qa.anwser}}</view>
+    </view>
+</view>
+<loading hidden="{{hidden}}">加载中...</loading>
+<toast hidden="{{toastHidden}}" duration="2000" bindchange="toastChange">{{errMsg}}</toast>

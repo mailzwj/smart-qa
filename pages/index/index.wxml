@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{appInfo.logoUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{appInfo.appName}}</text>
+  </view>
+  <view class="usermotto">
+    <button class="user-motto" type="primary" bindtap="enterAskAndAnwser">{{btnText}}</button>
+  </view>
+</view>

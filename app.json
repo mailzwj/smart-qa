@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/wd/wd"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "你问我答",
+    "navigationBarTextStyle":"white"
+  }
+}

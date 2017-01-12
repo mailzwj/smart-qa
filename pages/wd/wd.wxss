@@ -1,0 +1,73 @@
+.page-head,
+.page-form,
+.page-result {
+    display: block;
+    padding: 0 20px;
+}
+
+.page-head {
+    margin: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.page-result {
+    padding: 20px 20px;
+}
+
+.help-text {
+    padding: 10px 0;
+}
+
+.group {
+    position: relative;
+    margin-right: 56px;
+}
+
+.group .cancel,
+.group .search {
+    position: absolute;
+    display: inline-block;
+}
+
+.group .question {
+    padding-left: 10px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.group .cancel {
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.group .search {
+    top: 0;
+    right: -56px;
+}
+
+.page-result {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.page-result .row {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.page-result .row:last-child {
+    border-bottom: 0;
+}
+
+.page-result .user-question {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.page-result .sys-anwser {
+    line-height: 1.432;
+}
