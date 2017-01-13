@@ -12,7 +12,7 @@
 <view class="page-result">
     <view wx:for="{{user}}" wx:for-item="qa" class="row">
         <text class="user-question">{{qa.question}}</text>
-        <view class="sys-anwser">{{qa.anwser}}</view>
+        <view class="sys-anwser">{{qa.anwser}}<navigator wx:if="{{qa.url}}" url="qa.url">{{qa.url}}</navigator></view>
     </view>
 </view>
 <loading hidden="{{hidden}}">加载中...</loading>

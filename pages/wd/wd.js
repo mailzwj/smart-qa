@@ -56,7 +56,8 @@ Page({
           _data.hidden = true;
           _data.user.unshift({
             question: "问：" + q,
-            anwser: "答：" + (d.result.text || '')
+            anwser: "答：" + (d.result.text || ''),
+            url: d.result.url ? decodeURIComponent(d.result.url) : null
           });
           if (_data.user.length > 30) {
             _data.user.length = 30;
