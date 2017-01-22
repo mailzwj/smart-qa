@@ -1,8 +1,22 @@
+.page-form {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    border-top: 1px solid #e1e1e1;
+}
+
 .page-head,
 .page-form,
 .page-result {
     display: block;
     padding: 0 20px;
+}
+
+.page-form {
+    padding: 10px 20px;
 }
 
 .page-head {
@@ -13,7 +27,13 @@
 }
 
 .page-result {
-    padding: 20px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 67px;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .help-text {
@@ -49,13 +69,8 @@
     right: -56px;
 }
 
-.page-result {
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-}
-
 .page-result .row {
-    padding: 10px 0;
+    padding: 10px 20px;
     border-bottom: 1px solid #e1e1e1;
 }
 
